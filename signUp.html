@@ -6,38 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
-        <img alt="logo" />
-        <menu>
-            <ul>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li><a href="./signIn.html">Sign In</a></li>
-                <li><a href="./signUp.html">Sign Up</a></li>
-            </ul>
-        </menu>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">MasjidAid</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <form action="post">
-        <input type="text" name="firstName" placeholder="First Name">
-        <input type="text" name="lastName" placeholder="Last Name">
-        <input type="email" name="email" placeholder="Email Address">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="confirmPassword" placeholder="Confirm Password">
-        <input type="submit" value="Register">
-    </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">SignIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Register</a>
+                    </li>
+                </ul>
 
-    <footer>
-        <ul>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Register</li>
-            <li>Copyright ©2019 masjidaid.</li>
-        </ul>
-    </footer>
+            </div>
+        </nav>
+
+
+    <div class="mx-auto col-md-5 mt-5 mb-5">
+        <!-- Default form register -->
+        <form class="text-center border border-light p-5 rounded bg-light">
+
+            <h3 class="h4 mb-4">MasjidAid</h3>
+
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- First name -->
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <!-- Last name -->
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+
+            <!-- E-mail -->
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Password -->
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+                aria-describedby="defaultRegisterFormPasswordHelpBlock">
+            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                At least 8 characters and 1 digit
+            </small>
+
+            <!-- Phone number -->
+            <input type="number" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
+                aria-describedby="defaultRegisterFormPhoneHelpBlock">
+
+            <!-- Sign up button -->
+            <button class="btn btn-info my-4 btn-block" type="submit">Sign Up</button>
+
+            <!-- Sign In -->
+            <p>Already have an account?
+                <a href="">Sign In</a>
+            </p>
+
+
+            <a type="button" class="light-blue-text mx-2">
+                <i class="fa fa-facebook-f"></i>
+            </a>
+            <a type="button" class="light-blue-text mx-2">
+                <i class="fabfa-twitter"></i>
+            </a>
+            <a type="button" class="light-blue-text mx-2">
+                <i class="fa fa-linkedin-in"></i>
+            </a>
+            <a type="button" class="light-blue-text mx-2">
+                <i class="fa fa-github"></i>
+            </a>
+        </form>
+    </div>
+
+    <footer class="page-footer font-small bg-dark">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="#">MasjidAid</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
 </body>
 
 </html>

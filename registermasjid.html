@@ -6,56 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <header>
-        <img alt="logo" />
-        <menu>
-            <ul>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li><a href="./signIn.html">Sign In</a></li>
-                <li><a href="./signUp.html">Sign Up</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MasjidAid</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">SignIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Register</a>
+                </li>
             </ul>
-        </menu>
-    </header>
+
+        </div>
+    </nav>
 
     <main>
-        <div>
-            <form>
-                <fieldset>
-                    <legend><span class="number">1</span>Masjid Info</legend>
-                    <input type="text" name="name" placeholder="Masjid Name *">
-                    <input type="email" name="field2" placeholder="Masjid Email *">
-                    <textarea name="about" placeholder="About Masjid(optional)"></textarea>
-                    <label for="pictures">Pictures(add pictures aout the masjid)</label>
-                    <input type="file" name="pictures" id="" placeholder="majjid pics">
-                </fieldset>
+        <div class="mx-auto mt-5 mb-5 col-md-5">
+            <form class="text-center border border-light p-5 rounded bg-light">
+                <h3 class="mb-4">Register a Masjid</h3>
+                <input type="text" name="masjidName" placeholder="Masjid Name" class="form-control mb-4">
+                <input type="text" name="masjidemail" placeholder="Masjid Email" class="form-control mb-4">
+                <input type="text" name="masjidInfo" placeholder="About Masjid" class="form-control mb-4">
+                <input type="text" name="masjidLocation" placeholder="Masjid Location" class=" mb-4 form-control">
+                <input type="text" name="contactPersonName " placeholder="contact Person Name" class=" mb-4 form-control">
+                <input type="tel" name="contactPersonTel" placeholder="contact Person Number" class=" mb-4 form-control">
+                <input type="file" name="picture" placeholder="Masjid picture" class=" form-control mb-4">
 
-
-                <fieldset>
-                    <legend><span class="number">2</span>Masjid Location</legend>
-
-                </fieldset>
-
-                <fieldset>
-                    <legend><span class="number">3</span>Contact</legend>
-                    <input type="text" name="contact-name" placeholder="contact Person Name">
-                    <input type="text" name="contact-no" placeholder="contact Number">
-                </fieldset>
-                <input type="submit" value="Register" />
+                <button class="btn btn-info btn-block my-5">Register</button>
             </form>
         </div>
     </main>
 
-    <footer>
-        <ul>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Register</li>
-            <li>Copyright ©2019 masjidaid.</li>
-        </ul>
+    <footer class="page-footer font-small bg-dark">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="#">MasjidAid</a>
+        </div>
+        <!-- Copyright -->
+
     </footer>
 </body>
 
