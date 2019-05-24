@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../images/Abu-Dhabi-Sheikh-Zayed-Grand-Mosque-United-Arab-Emirates-full-HD-Wallpapers-1920x1200\ \(1\).jpg") no-repeat fixed center;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    /* z-index: 2;  */
+    cursor: pointer; 
+  }
+
+#intro{
+}
+
+.container-lg, .container-xl {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-lg {
+    max-width: 1012px;
+}
+
+.py-sm-8 {
+    padding-bottom: 70px!important;
+    padding-top: 70px!important;
+}
+
+.rounded-1 {
+    border-radius: 3px!important;
+}
+
+.intext{
+    font-size: 20px;
+    color: rgb(187, 187, 187);
+}
