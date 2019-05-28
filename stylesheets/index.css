@@ -16,7 +16,6 @@ body{
     bottom: 0;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     /* z-index: 2;  */
-    cursor: pointer; 
   }
 
 #intro{

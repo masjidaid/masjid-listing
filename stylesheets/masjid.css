@@ -8,17 +8,20 @@ body{
     top: 90%;
     float: left;
     transition: all 0.4s, all 0.4s ease;
-   
+    margin-left: 95%;
 }
 
 .plus-btn i {
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
 
 }
 
-
+.reg-text{
+    
+}
+/* 
 .plus-btn:hover {
 	transform: translate(300px, 0);
 }
-
+ */
